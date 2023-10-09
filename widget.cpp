@@ -11,6 +11,10 @@ Widget::Widget(QWidget* parent) :QWidget(parent) {
     qvbl->addWidget(startbtn);
     qvbl->addWidget(stopbtn);
     qvbl->addWidget(pausebtn);
+
+    connect(startbtn, &QPushButton::clicked, this, &Widget::starting);
+    connect(stopbtn, &QPushButton::clicked, this, &Widget::stoping);
+    connect(pausebtn, &QPushButton::clicked, this, &Widget::pausing);
 }
 Widget::~Widget() {}
 
