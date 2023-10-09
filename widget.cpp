@@ -18,6 +18,8 @@ Widget::Widget(QWidget* parent) :QWidget(parent) {
 }
 Widget::~Widget() {}
 
-void Widget::starting() {}
+void Widget::starting() {
+    QMessageBox::warning(this, "Information", "Test v8.1: OK.");
+}
 void Widget::stoping() {}
 void Widget::pausing() {}
