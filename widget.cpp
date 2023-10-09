@@ -21,5 +21,7 @@ Widget::~Widget() {}
 void Widget::starting() {
     QMessageBox::warning(this, "Information", "Test v8.1: OK.");
 }
-void Widget::stoping() {}
+void Widget::stoping() {
+    QMessageBox::warning(this, "Information", "Stoping this TEST");
+}
 void Widget::pausing() {}
