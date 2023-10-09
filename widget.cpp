@@ -24,4 +24,6 @@ void Widget::starting() {
 void Widget::stoping() {
     QMessageBox::warning(this, "Information", "Stoping this TEST");
 }
-void Widget::pausing() {}
+void Widget::pausing() {
+    QMessageBox::warning(this, "Information", "Pausing this TEST");
+}
