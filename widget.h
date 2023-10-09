@@ -5,4 +5,6 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 
+class Widget : public QWidget {};
+
 #endif
