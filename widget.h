@@ -12,5 +12,11 @@ public:
     Widget(QWidget* parent = nullptr);
     ~Widget();
 };
+private:
+    QPushButton* startbtn;
+    QPushButton* stopbtn;
+    QPushButton* pausebtn;
+    QVBoxLayout* qvbl;
+
   
 #endif
