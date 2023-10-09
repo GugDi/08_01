@@ -12,11 +12,16 @@ public:
     Widget(QWidget* parent = nullptr);
     ~Widget();
 };
+
 private:
     QPushButton* startbtn;
     QPushButton* stopbtn;
     QPushButton* pausebtn;
     QVBoxLayout* qvbl;
 
+private slots:
+    void starting();
+    void stoping();
+    void pausing();
   
 #endif
