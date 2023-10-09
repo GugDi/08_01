@@ -1,0 +1,2 @@
+CONFIG += console
+QT+=widgets
