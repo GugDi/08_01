@@ -6,6 +6,11 @@ Widget::Widget(QWidget* parent) :QWidget(parent) {
     startbtn = new QPushButton("Start");
     stopbtn = new QPushButton("Stop");
     pausebtn = new QPushButton("Pause");
+
+    qvbl = new QVBoxLayout(this);
+    qvbl->addWidget(startbtn);
+    qvbl->addWidget(stopbtn);
+    qvbl->addWidget(pausebtn);
 }
 Widget::~Widget() {}
 
